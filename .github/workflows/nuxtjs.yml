@@ -56,7 +56,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: Build Next.js (this automatically exports to `out/` due to output:"export")
+      - name: Build Next.js (this automatically exports to `out/` due to output: "export")
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
       - name: Upload artifact
