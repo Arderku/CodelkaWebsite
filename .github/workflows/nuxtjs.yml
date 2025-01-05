@@ -22,8 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Optional: detect package manager if you like, 
-      # but if you know it's npm, you can skip detection.
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -46,18 +44,18 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          # Tell setup-node where the lock file is:
+          # Tell setup-node where the lock file is (if using npm):
           cache-dependency-path: "codelka/package-lock.json"
 
-      - name: Install dependencies
+      - name: Install dependencies (ignoring peer deps)
         run: |
           cd codelka
-          ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+          npm ci --legacy-peer-deps
 
       - name: Build Next.js
         run: |
           cd codelka
-          ${{ steps.detect-package-manager.outputs.manager }} run build
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
