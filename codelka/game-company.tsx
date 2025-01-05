@@ -8,6 +8,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { lexend } from './fonts'
+import { Logo } from './components/logo'
 
 export default function GameCompany() {
   const ref = useRef(null)
@@ -29,11 +30,11 @@ export default function GameCompany() {
         >
           <Link className="flex items-center justify-center group" href="#">
             <div className="relative">
-              <GameController className="h-6 w-6 text-[#9B8BB4] transition-transform group-hover:scale-110" />
+              <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
               <div className="absolute inset-0 bg-[#9B8BB4]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <span className={`ml-2 text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
-              Pixel Two
+              Codelka
             </span>
           </Link>
         </motion.div>
@@ -69,14 +70,13 @@ export default function GameCompany() {
             >
               <Sparkles className="h-12 w-12 text-[#9B8BB4] animate-pulse" />
               <div className="space-y-4 max-w-2xl">
-                <h1 className={`text-4xl font-bold tracking-tight sm:text-5xl xl:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] via-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
-                  Making Games
+                <h1 className={`text-4xl font-black tracking-tight leading-tight sm:text-5xl xl:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] via-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
+                  Feed with Love
                   <br />
-                  <span className="text-[#9B8BB4]">With Love</span>
+                  <span className="text-[#9B8BB4] font-black">Tap with Joy</span>
                 </h1>
                 <p className="mx-auto max-w-[600px] text-[#584D6D]/70 md:text-lg leading-relaxed">
-                  Two friends, infinite possibilities. We're crafting our dream game 
-                  with a sprinkle of magic and a whole lot of passion.
+                  Embark on a delightful adventure. Feed your virtual friend and create magical moments - one tap at a time.
                 </p>
               </div>
               <motion.div
@@ -88,7 +88,7 @@ export default function GameCompany() {
                     shadow-[0_0_0_3px_rgba(155,139,180,0.3)] hover:shadow-[0_0_0_5px_rgba(155,139,180,0.3)] ${lexend.className}`}
                   size="lg"
                 >
-                  Discover Our Universe
+                  Start Feeding
                   <Rocket className="ml-2 h-4 w-4" />
                 </Button>
               </motion.div>
@@ -115,19 +115,19 @@ export default function GameCompany() {
                     <div className="inline-block rounded-full bg-[#9B8BB4]/10 px-4 py-1.5">
                       <span className={`text-sm text-[#584D6D] ${lexend.className}`}>Coming Soon</span>
                     </div>
-                    <h2 className={`text-3xl font-bold tracking-tight sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
-                      Epic Quest
+                    <h2 className={`text-3xl font-extrabold tracking-tight sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
+                      FeedMi
                     </h2>
                     <p className="text-[#584D6D]/70 md:text-lg leading-relaxed">
-                      A magical adventure where every pixel tells a story. Dive into a world where 
-                      classic RPG charm meets modern game design.
+                      The addictively cute mobile game where every tap brings joy. Feed your adorable companion, 
+                      watch them grow, and discover endless surprises along the way.
                     </p>
                     <ul className="space-y-4">
                       {[
-                        'Rich storyline with meaningful choices',
-                        'Hand-crafted pixel art environments',
-                        'Original soundtrack that sets the mood',
-                        'Innovative combat system'
+                        'Engaging tap-to-feed gameplay mechanics',
+                        'Cute and expressive character animations',
+                        'Unlock special foods and rare reactions',
+                        'Compete with friends on global leaderboards'
                       ].map((feature, i) => (
                         <motion.li
                           key={feature}
@@ -152,7 +152,7 @@ export default function GameCompany() {
                           shadow-[0_0_0_3px_rgba(155,139,180,0.3)] hover:shadow-[0_0_0_5px_rgba(155,139,180,0.3)] ${lexend.className}`}
                         size="lg"
                       >
-                        Join the Beta
+                        Pre-register Now
                         <Sparkles className="ml-2 h-4 w-4" />
                       </Button>
                     </motion.div>
@@ -194,7 +194,7 @@ export default function GameCompany() {
                 <div className="inline-block rounded-full bg-[#9B8BB4]/10 px-4 py-1.5">
                   <span className={`text-sm text-[#584D6D] ${lexend.className}`}>Join the Adventure</span>
                 </div>
-                <h2 className={`text-3xl font-bold tracking-tight sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
+                <h2 className={`text-3xl font-extrabold tracking-tight sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#584D6D] to-[#9B8BB4] ${lexend.className}`}>
                   Be Part of Our Story
                 </h2>
                 <p className="text-[#584D6D]/70 md:text-lg">
@@ -254,13 +254,14 @@ export default function GameCompany() {
             className="flex flex-col items-center justify-center space-y-4 text-center"
           >
             <Link className="flex items-center justify-center group" href="#">
-              <GameController className="h-6 w-6 text-[#9B8BB4] transition-transform group-hover:scale-110" />
-              <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Pixel Two</span>
+              <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
+              <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
-            <p className="text-sm text-[#584D6D]/70">© 2024 Pixel Two. Made with ❤️ in pixels</p>
+            <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
           </motion.div>
         </div>
       </footer>
     </div>
   )
 }
+
