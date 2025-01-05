@@ -60,7 +60,7 @@ export default function GameCompany() {
 
       <main className="flex-1 pt-16">
         <section className="min-h-screen flex items-center relative">
-          <div className="container px-4 md:px-6 py-12 md:py-24 lg:py-32">
+          <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 lg:py-32 max-w-7xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function GameCompany() {
         </section>
 
         <section id="game" className="py-24 lg:py-32 relative overflow-hidden">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +182,7 @@ export default function GameCompany() {
         </section>
 
         <section id="contact" className="py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -264,4 +264,3 @@ export default function GameCompany() {
     </div>
   )
 }
-
