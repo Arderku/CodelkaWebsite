@@ -257,7 +257,7 @@ export default function GameCompany() {
               <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
               <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
-            <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
+            <p className="text-sm text-[#584D6D]/70">© 2025 Codelka. All rights reserved.</p>
           </motion.div>
         </div>
       </footer>
