@@ -257,15 +257,13 @@ export default function GameCompany() {
               <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
               <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
-            <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
-            <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-              <Link href="/privacy" className="text-xs hover:underline underline-offset-4">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+              <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
+              <span className="hidden sm:inline text-[#584D6D]/30">•</span>
+              <Link href="/privacy-policy" className="text-sm text-[#584D6D]/70 hover:text-[#584D6D] transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-xs hover:underline underline-offset-4">
-                Terms of Service
-              </Link>
-            </nav>
+            </div>
           </motion.div>
         </div>
       </footer>
