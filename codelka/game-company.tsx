@@ -258,7 +258,7 @@ export default function GameCompany() {
               <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-              <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
+              <p className="text-sm text-[#584D6D]/70">© 2025 Codelka. All rights reserved.</p>
               <span className="hidden sm:inline text-[#584D6D]/30">•</span>
               <Link href="/privacy-policy" className="text-sm text-[#584D6D]/70 hover:text-[#584D6D] transition-colors">
                 Privacy Policy
