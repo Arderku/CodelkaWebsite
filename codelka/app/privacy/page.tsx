@@ -1,3 +1,5 @@
+"use client"
+
 import { lexend } from '../../fonts'
 
 // 1) You can store your HTML snippet as a constant string. 
