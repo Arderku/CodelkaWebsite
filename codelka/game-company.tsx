@@ -262,9 +262,6 @@ export default function GameCompany() {
               <Link href="/privacy" className="text-xs hover:underline underline-offset-4">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-xs hover:underline underline-offset-4">
-                Terms of Service
-              </Link>
             </nav>
           </motion.div>
         </div>
