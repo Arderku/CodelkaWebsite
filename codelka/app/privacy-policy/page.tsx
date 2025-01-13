@@ -66,7 +66,6 @@ export default function PrivacyPolicy() {
               </div>
             </section>
 
-            {/* Sections 2-12 following the same structure */}
             <section>
               <h2 className="text-2xl font-bold text-[#584D6D] mt-12">2. How We Use Your Information</h2>
               <ul className="list-disc pl-6 space-y-2">
@@ -78,7 +77,133 @@ export default function PrivacyPolicy() {
               </ul>
             </section>
 
-            {/* Continue with remaining sections... */}
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">3. Legal Basis for Processing Personal Data (For Users in the EU/UK)</h2>
+              <p>For individuals in the European Union and the United Kingdom, we process your data based on:</p>
+              <ul className="list-none space-y-4 mt-4">
+                <li>
+                  <strong className="text-[#584D6D]">Consent:</strong> When you provide explicit consent (e.g., for optional analytics or marketing communications).
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Legitimate Interests:</strong> For operational purposes such as improving the Game.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Legal Obligation:</strong> When required to comply with applicable laws.
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">4. Sharing and Disclosure of Information</h2>
+              <p>We only share your information in limited circumstances:</p>
+
+              <h3 className="text-xl font-semibold text-[#584D6D] mt-6">a. Service Providers</h3>
+              <p>
+                We may share information with third-party service providers who assist in hosting, analytics, and customer support. 
+                These providers are obligated to handle your data securely and only for the purposes specified.
+              </p>
+
+              <h3 className="text-xl font-semibold text-[#584D6D] mt-6">b. Legal Compliance</h3>
+              <p>
+                We may disclose your information if required to do so by law or in response to valid legal requests by public authorities.
+              </p>
+
+              <h3 className="text-xl font-semibold text-[#584D6D] mt-6">c. Business Transfers</h3>
+              <p>
+                If Codelka undergoes a merger, acquisition, or asset sale, your information may be transferred as part of that transaction. 
+                You will be notified of any such change.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">5. International Data Transfers</h2>
+              <p>
+                Your information may be processed and stored outside your country of residence, including in the United States. 
+                We ensure that appropriate safeguards are in place to protect your data in accordance with applicable laws, 
+                such as GDPR for EU/UK users.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">6. Data Retention</h2>
+              <p>
+                We retain your information only as long as necessary for the purposes outlined in this Privacy Policy, 
+                or as required by law. When information is no longer needed, we securely delete or anonymize it.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">7. Your Rights</h2>
+              <p>Depending on your location, you may have the following rights:</p>
+              <ul className="list-none space-y-4 mt-4">
+                <li>
+                  <strong className="text-[#584D6D]">Access:</strong> Request access to the data we hold about you.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Correction:</strong> Request correction of inaccurate or incomplete data.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Erasure:</strong> Request deletion of your data (subject to legal and contractual obligations).
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Restriction:</strong> Request restriction of data processing.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Objection:</strong> Object to data processing based on legitimate interests.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Portability:</strong> Request transfer of your data to another service.
+                </li>
+                <li>
+                  <strong className="text-[#584D6D]">Withdraw Consent:</strong> Withdraw consent for processing where applicable.
+                </li>
+              </ul>
+              <p className="mt-4">
+                To exercise your rights, please contact us at{' '}
+                <Link href="mailto:codelka.studios@gmail.com" className="text-[#9B8BB4] hover:text-[#584D6D]">
+                  codelka.studios@gmail.com
+                </Link>. 
+                We will respond in accordance with applicable laws.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">8. Children's Privacy</h2>
+              <p>
+                The Game is not intended for children under 13 years old (or the minimum age in your jurisdiction). 
+                We do not knowingly collect personal data from children. If you believe we have collected data from 
+                a child under this age, please contact us at{' '}
+                <Link href="mailto:codelka.studios@gmail.com" className="text-[#9B8BB4] hover:text-[#584D6D]">
+                  codelka.studios@gmail.com
+                </Link>, 
+                and we will take steps to delete it.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">9. Security Measures</h2>
+              <p>
+                We implement reasonable technical and organizational measures to safeguard your information. 
+                However, no method of transmission over the internet or electronic storage is completely secure, 
+                and we cannot guarantee absolute security.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">10. Third-Party Links</h2>
+              <p>
+                Our Game or website may include links to third-party websites or services. We are not responsible 
+                for the privacy practices of these third parties, and we encourage you to review their privacy policies.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-[#584D6D] mt-12">11. Changes to This Privacy Policy</h2>
+              <p>
+                We may update this Privacy Policy from time to time. Any changes will be posted on this page, 
+                with the updated date at the top. We encourage you to review the Privacy Policy periodically.
+              </p>
+            </section>
 
             <section>
               <h2 className="text-2xl font-bold text-[#584D6D] mt-12">12. Contact Us</h2>
@@ -102,10 +227,25 @@ export default function PrivacyPolicy() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <Link className="flex items-center justify-center group" href="/">
-              <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
-              <span className="ml-2 text-lg font-bold tracking-tight text-[#584D6D]">Codelka</span>
+              <Logo className="h-10 w-10 text-[#9B8BB4] transition-transform group-hover:scale-110" />
+              <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
-            <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
+            <div className="flex items-center gap-4">
+              <Link 
+                href="/privacy-policy" 
+                className="text-sm font-medium text-[#584D6D] hover:text-[#9B8BB4] transition-colors underline-offset-4 hover:underline"
+              >
+                Privacy Policy
+              </Link>
+              <span className="text-[#584D6D]/30">•</span>
+              <Link 
+                href="/terms" 
+                className="text-sm font-medium text-[#584D6D] hover:text-[#9B8BB4] transition-colors underline-offset-4 hover:underline"
+              >
+                Terms of Service
+              </Link>
+            </div>
+            <p className="text-xs text-[#584D6D]/70">© 2025 Codelka. All rights reserved.</p>
           </div>
         </div>
       </footer>
