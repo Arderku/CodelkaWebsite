@@ -39,7 +39,7 @@ export default function GameCompany() {
           </Link>
         </motion.div>
         <nav className="ml-auto flex gap-6 sm:gap-8">
-          {['game', 'contact'].map((item, i) => (
+          {['our games', 'contact'].map((item, i) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: -20 }}
@@ -142,20 +142,51 @@ export default function GameCompany() {
                         </motion.li>
                       ))}
                     </ul>
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="pt-4"
-                    >
-                      <Button 
-                        className={`h-12 px-6 text-sm font-medium transition-all bg-[#9B8BB4] hover:bg-[#8A7BA3] text-white rounded-full
-                          shadow-[0_0_0_3px_rgba(155,139,180,0.3)] hover:shadow-[0_0_0_5px_rgba(155,139,180,0.3)] ${lexend.className}`}
-                        size="lg"
+                    <div className="space-y-4">
+                      <div className="flex flex-col gap-4 min-[400px]:flex-row justify-center">
+                        <motion.div
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <Link href="#" className="inline-block">
+                            <Image
+                              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/appstore.c44572b2-3Lze56NTSFYUjB4IjQpTG3xfhcpceQ.webp"
+                              alt="Download on the App Store"
+                              width={156}
+                              height={52}
+                              className="h-[52px] w-auto"
+                            />
+                          </Link>
+                        </motion.div>
+                        <motion.div
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <Link href="#" className="inline-block">
+                            <Image
+                              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/googleplay.4ced544f-x0btvScKorphMdGTvB0wljWCti0Tjd.webp"
+                              alt="Get it on Google Play"
+                              width={156}
+                              height={52}
+                              className="h-[52px] w-auto"
+                            />
+                          </Link>
+                        </motion.div>
+                      </div>
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex justify-center"
                       >
-                        Pre-register Now
-                        <Sparkles className="ml-2 h-4 w-4" />
-                      </Button>
-                    </motion.div>
+                        <Button 
+                          variant="outline"
+                          className={`h-12 px-6 text-sm font-medium transition-all text-[#584D6D] border-[#9B8BB4]/20 hover:bg-[#9B8BB4]/5 rounded-full ${lexend.className}`}
+                          size="lg"
+                        >
+                          Learn More
+                        </Button>
+                      </motion.div>
+                    </div>
                   </div>
                   <div className="relative group">
                     <motion.div
@@ -166,11 +197,11 @@ export default function GameCompany() {
                       className="relative rounded-3xl overflow-hidden"
                     >
                       <Image
-                        alt="Game Preview"
+                        alt="FeedMi Game Character"
                         className="rounded-3xl object-cover shadow-xl transition-transform duration-500 group-hover:scale-105"
-                        height="600"
-                        src="/placeholder.svg"
+                        height="800"
                         width="800"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/feedmi_artwork_02-csKdqYKjBj33TZjo7K5kIIiwJVGTsn.png"
                       />
                       <div className="absolute inset-0 bg-gradient-to-tr from-[#9B8BB4]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </motion.div>
@@ -254,15 +285,25 @@ export default function GameCompany() {
             className="flex flex-col items-center justify-center space-y-4 text-center"
           >
             <Link className="flex items-center justify-center group" href="#">
-              <Logo className="h-8 w-8 text-[#9B8BB4] transition-transform group-hover:scale-110" />
+              <Logo className="h-10 w-10 text-[#9B8BB4] transition-transform group-hover:scale-110" />
               <span className={`ml-2 text-lg font-bold tracking-tight text-[#584D6D] ${lexend.className}`}>Codelka</span>
             </Link>
-            <p className="text-sm text-[#584D6D]/70">© 2024 Codelka. Made with ❤️ in pixels</p>
-            <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-              <Link href="/privacy" className="text-xs hover:underline underline-offset-4">
+            <div className="flex items-center gap-4">
+              <Link 
+                href="/privacy-policy" 
+                className="text-sm font-medium text-[#584D6D] hover:text-[#9B8BB4] transition-colors underline-offset-4 hover:underline"
+              >
                 Privacy Policy
               </Link>
-            </nav>
+              <span className="text-[#584D6D]/30">•</span>
+              <Link 
+                href="/terms" 
+                className="text-sm font-medium text-[#584D6D] hover:text-[#9B8BB4] transition-colors underline-offset-4 hover:underline"
+              >
+                Terms of Service
+              </Link>
+            </div>
+            <p className="text-xs text-[#584D6D]/70">© 2025 Codelka. All rights reserved.</p>
           </motion.div>
         </div>
       </footer>
